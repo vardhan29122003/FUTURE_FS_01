@@ -1,10 +1,18 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
+<<<<<<< HEAD
         .gradient-bg {
     background: linear-gradient(135deg, #0f172a, #1e293b, #3b82f6);
 
   }
+=======
+       .gradient-bg {
+  background: linear-gradient(135deg, #0f172a, #1e293b, #3b82f6);
+  color: white;
+}
+
+>>>>>>> 1d54999eecbbc852f1591048c60e5d4c85b0f3e0
         .card-hover { transition: all 0.3s ease; }
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
         .skill-bar { transition: width 1s ease-in-out; }

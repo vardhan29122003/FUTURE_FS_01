@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Vardhan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800"></h1>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-indigo-600 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block text-gray-600 hover:text-indigo-600 py-2">Home</a>
+                <a href="#about" class="block text-gray-600 hover:text-indigo-600 py-2">About</a>
+                <a href="#skills" class="block text-gray-600 hover:text-indigo-600 py-2">Skills</a>
+                <a href="#projects" class="block text-gray-600 hover:text-indigo-600 py-2">Projects</a>
+                <a href="#contact" class="block text-gray-600 hover:text-indigo-600 py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-user text-4xl text-white"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4">Vishnu Vardhan</h1>
+                 <p class="text-xl md:text-2xl mb-2 font-medium">
+          Cybersecurity Student | Frontend Developer | Python Programmer
+        </p>
+                <p class="text-lg opacity-90 mb-8"></p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors">
+                    Get In Touch
+                </a>
+                <a href="#projects" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
+                    View My Work
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="mailto:vardhanyadlapalli225@gmail.com" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="tel:+918247439115" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fas fa-phone text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200 transition-colors">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-fade">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Professional Summary</h3>
+                        <p class="text-white/90 leading-relaxed mb-6">
+                           Self-motivated and technically proficient B.Tech Cybersecurity student with a strong foundation in programming and software development. Proficient in Python and well-versed in object-oriented programming, data structures, and algorithms.
+                        </p>
+                        <p class="text-white/90 leading-relaxed mb-6">
+                            Passionate about creating innovative, user-centric applications and solving real-world problems through clean, efficient code. Eager to contribute to impactful software projects by leveraging strong analytical thinking and a developer mindset.
+                        </p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Active Listener</span>
+                            <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Self-Motivated</span>
+                            <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm">Quick Learner</span>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                            <h4 class="font-semibold text-white mb-2">Education</h4>
+                            <div class="space-y-4">
+                                <div>
+                                    <p class="font-medium text-white">B.Tech in Cybersecurity</p>
+                                    <p class="text-white/80 text-sm">Vignan University (2022-2026)</p>
+                                    <p class="text-white/80 text-sm">CGPA: 7.5</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">Intermediate (MPC)</p>
+                                    <p class="text-white/80 text-sm">Narayana Junior College</p>
+                                    <p class="text-white/80 text-sm">96.1% (961/1000)</p>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-white">SSC (10th)</p>
+                                    <p class="text-white/80 text-sm">Narayana EM School</p>
+                                    <p class="text-white/80 text-sm">95.5% (573/600)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg">
+                            <h4 class="font-semibold text-white mb-2">Contact Info</h4>
+                            <div class="space-y-2">
+                                <p class="text-white/90"><i class="fas fa-phone mr-2"></i>+91 8247439115</p>
+                                <p class="text-white/90"><i class="fas fa-envelope mr-2"></i>vardhanyadlapalli225@gmail.com</p>
+                                <p class="text-white/90"><i class="fas fa-map-marker-alt mr-2"></i>Guntur, Andhra Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-fade">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Skills & Technologies</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-python text-4xl text-yellow-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">Python</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-js-square text-4xl text-yellow-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">JavaScript</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-html5 text-4xl text-orange-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">HTML/CSS</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">React</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-node-js text-4xl text-green-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">Node.js</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-code text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">C</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fab fa-linux text-4xl text-gray-300 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">Linux</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-database text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">SQL</h3>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center card-hover">
+                        <i class="fas fa-code text-4xl text-blue-400 mb-3"></i>
+                        <h3 class="text-lg font-semibold text-white">VS Code</h3>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-semibold text-center mb-8 text-white">Certifications</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center card-hover">
+                            <i class="fas fa-shield-alt text-3xl text-red-400 mb-3"></i>
+                            <h4 class="font-semibold text-white">Google Cybersecurity Professional</h4>
+                            <p class="text-white/80 text-sm">Cisco</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center card-hover">
+                            <i class="fab fa-python text-3xl text-blue-400 mb-3"></i>
+                            <h4 class="font-semibold text-white">Python Programming</h4>
+                            <p class="text-white/80 text-sm">Cisco (Level 1 & 2)</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center card-hover">
+                            <i class="fas fa-network-wired text-3xl text-green-400 mb-3"></i>
+                            <h4 class="font-semibold text-white">Networking Basics</h4>
+                            <p class="text-white/80 text-sm">Cisco</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center card-hover">
+                            <i class="fas fa-brain text-3xl text-purple-400 mb-3"></i>
+                            <h4 class="font-semibold text-white">Generative AI</h4>
+                            <p class="text-white/80 text-sm">Google Cloud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="section-fade">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Facial Authentication Project -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-user-shield text-3xl text-purple-400 mr-4"></i>
+                                <h3 class="text-xl font-semibold text-white">Facial Authentication System</h3>
+                            </div>
+                            <p class="text-white/90 mb-4">
+                                Designed and implemented a secure, contactless facial authentication mechanism for a food ordering system with enhanced user experience.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Key Features:</h4>
+                                <ul class="text-white/80 text-sm space-y-1">
+                                    <li>• Real-time facial authentication with 95% accuracy</li>
+                                    <li>• Reduced login time to <2 seconds</li>
+                                    <li>• 98% user satisfaction (50+ users tested)</li>
+                                    <li>• Scalable to 100+ concurrent users</li>
+                                    <li>• Recognized at university tech fest</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Tech Stack:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">OpenCV</span>
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">TensorFlow</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Python</span>
+                                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">React</span>
+                                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Redux</span>
+                                    <span class="bg-gray-100 text-gray-800 px-2 py-1 rounded text-xs">SQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fitness Tracker Project -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-dumbbell text-3xl text-green-400 mr-4"></i>
+                                <h3 class="text-xl font-semibold text-white">Fitness Tracker Web App</h3>
+                            </div>
+                            <p class="text-white/90 mb-4">
+                                Developed a full-stack fitness tracker web application using MERN stack to help users monitor workouts and fitness goals.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Key Features:</h4>
+                                <ul class="text-white/80 text-sm space-y-1">
+                                    <li>• JWT authentication with bcrypt security</li>
+                                    <li>• RESTful APIs for CRUD operations</li>
+                                    <li>• Interactive data visualization with Chart.js</li>
+                                    <li>• MongoDB Atlas cloud integration</li>
+                                    <li>• Fully responsive design</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Tech Stack:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">MongoDB</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Express.js</span>
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">React</span>
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+                                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Chart.js</span>
+                                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">JWT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amazon Clone Project -->
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg card-hover">
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-shopping-cart text-3xl text-orange-400 mr-4"></i>
+                                <h3 class="text-xl font-semibold text-white">Amazon Clone E-commerce</h3>
+                            </div>
+                            <p class="text-white/90 mb-4">
+                                Built a fully functional e-commerce platform replicating Amazon's core features with modern web technologies and responsive design.
+                            </p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Key Features:</h4>
+                                <ul class="text-white/80 text-sm space-y-1">
+                                    <li>• Product catalog with search and filters</li>
+                                    <li>• Shopping cart and checkout system</li>
+                                    <li>• User authentication and profiles</li>
+                                    <li>• Order tracking and history</li>
+                                    <li>• Admin dashboard for product management</li>
+                                </ul>
+                            </div>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-white mb-2">Tech Stack:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">React</span>
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Node.js</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">Express.js</span>
+                                    <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">MongoDB</span>
+                                    <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">Stripe API</span>
+                                    <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs">Redux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="section-fade">
+                <h2 class="text-4xl font-bold text-center mb-16">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Let's Connect</h3>
+                        <p class="text-lg opacity-90 mb-8">
+                            I'm always interested in new opportunities and collaborations. Whether you have a project in mind or just want to chat about technology, feel free to reach out!
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-xl mr-4"></i>
+                                <a href="mailto:vardhanyadlapalli225@gmail.com" class="hover:underline">vardhanyadlapalli225@gmail.com</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-xl mr-4"></i>
+                                <a href="tel:+918247439115" class="hover:underline">+91 8247439115</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-xl mr-4"></i>
+                                <span>Guntur, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white" placeholder="your.email@example.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:border-white resize-none" placeholder="Your message..." required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-white text-indigo-600 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                        <div id="form-message" class="mt-4 text-center hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Vishnu Vardhan. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="mailto:vardhanyadlapalli225@gmail.com" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="tel:+918247439115" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+    
+        
+         
+</body>
+</html>

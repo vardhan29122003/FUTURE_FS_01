@@ -2,7 +2,13 @@ name: Deploy to GitHub Pages
 
 on:
   push:
+<<<<<<< HEAD
     branches: [ main, master ]
+=======
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+>>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
 
 jobs:
   build-and-deploy:
@@ -15,7 +21,11 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
+<<<<<<< HEAD
         node-version: '20'
+=======
+        node-version: '18'
+>>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
         cache: 'npm'
         
     - name: Install dependencies
@@ -36,11 +46,22 @@ jobs:
       id: deployment
       uses: actions/deploy-pages@v4
 
+<<<<<<< HEAD
+=======
+  # Job for permissions
+>>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
 permissions:
   contents: read
   pages: write
   id-token: write
 
+<<<<<<< HEAD
 concurrency:
   group: "pages"
   cancel-in-progress: false
+=======
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+>>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)

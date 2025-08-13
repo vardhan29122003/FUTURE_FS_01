@@ -2,66 +2,47 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-<<<<<<< HEAD
-    branches: [ main, master ]
-=======
-    branches: [ main ]
+    branches: [ main ]   # Deploy when pushing to main
   pull_request:
     branches: [ main ]
->>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-<<<<<<< HEAD
-        node-version: '20'
-=======
-        node-version: '18'
->>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
-        cache: 'npm'
+      - name: Checkout
+        uses: actions/checkout@v4
         
-    - name: Install dependencies
-      run: npm ci
-      
-    - name: Build
-      run: npm run build
-      
-    - name: Setup Pages
-      uses: actions/configure-pages@v4
-      
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: './dist'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'   # Keep 18 for stability
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm ci
         
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+      - name: Build
+        run: npm run build
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'  # Make sure your React build output folder is actually 'dist'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-<<<<<<< HEAD
-=======
-  # Job for permissions
->>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
 permissions:
   contents: read
   pages: write
   id-token: write
 
-<<<<<<< HEAD
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-=======
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
->>>>>>> bb5c19c (Initial commit: React portfolio with VS Code setup)
